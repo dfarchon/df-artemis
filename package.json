@@ -1,8 +1,10 @@
 {
-    "name": "@dfares/df-artemis",
+    "name": "@dfares/df-artemis-test",
     "version": "0.0.6",
     "description": "Planet-targeted bounty mercenary system for Dark Forest",
-    "files": ["dest"],
+    "files": [
+        "dest"
+    ],
     "scripts": {
         "test": "hardhat test",
         "compile": "hardhat compile",
@@ -17,7 +19,7 @@
         "hardhat:ropsten": "hardhat --network ropsten",
         "hardhat:redstone": "hardhat --network redstone",
         "hardhat:redstoneTestnet": "hardhat --network redstoneTestnet",
-        "deploy:redstoneTestnet":"hardhat --network redstoneTestnet run scripts/deploy.ts",
+        "deploy:redstoneTestnet": "hardhat --network redstoneTestnet run scripts/deploy.ts",
         "deploy:redstone": "hardhat --network redstone run scripts/deploy.ts",
         "deploy:xdai": "hardhat run scripts/deploy.ts --network xdai",
         "analysis:dev": "hardhat run scripts/analysis.ts --network localhost",
@@ -67,6 +69,8 @@
         "typechain": "^8.1.0",
         "typescript": "^4.7.4",
         "urql": "^3.0.1"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
-
